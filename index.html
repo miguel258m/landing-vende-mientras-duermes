@@ -172,6 +172,19 @@
   .bonus h4{font-family:'Space Grotesk',sans-serif; color:var(--amber); font-size:15px; margin-bottom:6px; text-transform:uppercase; letter-spacing:.03em;}
   .bonus p{color:var(--text-1); font-size:14.5px;}
 
+  .cover-card{
+    margin-top:24px; display:flex; align-items:center; gap:20px;
+    background:var(--bg-1); border:1px solid var(--line); border-radius:16px; padding:18px 22px;
+  }
+  .cover-img{
+    width:120px; height:180px; object-fit:cover; border-radius:10px;
+    box-shadow:0 14px 32px rgba(46,99,232,.25); flex-shrink:0;
+    transition:transform .25s ease;
+  }
+  .cover-img:hover{transform:scale(1.04) rotate(-1deg);}
+  .cover-title{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px;}
+  .cover-sub{font-size:12.5px; color:var(--text-2); margin-top:2px;}
+
   /* FOR WHOM */
   .forwhom{padding:64px 0; border-top:1px solid var(--line);}
   .chip-grid{display:flex; flex-wrap:wrap; gap:10px; margin-top:28px;}
@@ -349,6 +362,14 @@
       <div>
         <h4>Bonus incluido</h4>
         <p>15 respuestas a objeciones que cierran ventas ("está caro", "lo voy a pensar", "¿es confiable?") + Checklist de lanzamiento en 7 días.</p>
+      </div>
+    </div>
+
+    <div class="cover-card" data-reveal>
+      <img src="portada.jpg" alt="Portada del ebook Vende Mientras Duermes" class="cover-img">
+      <div class="cover-meta">
+        <div class="cover-title">Vende Mientras Duermes</div>
+        <div class="cover-sub">Ebook PDF · 17 páginas 100% accionables</div>
       </div>
     </div>
   </section>
